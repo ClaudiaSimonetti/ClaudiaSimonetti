@@ -82,30 +82,30 @@
     <main class="mainContacto">
         <h1 class="tituloSeccion">Contacto</h1>
         <p>Escribe tu consulta o comentario y te responderé a la brevedad.</p>
-		<form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded"> 
+		<form action="https://formspree.io/f/xqkwwpla" method="post" enctype="application/x-www-form-urlencoded"> 
 			<fieldset class="formularioDeContacto">
 				<legend>Formulario de contacto</legend>
 				<label for="nombre">Nombre:</label>
-				<input class="campoFormulario" type="text" required="" name="nombre">
+				<input class="campoFormulario" type="text" required="" name="name">
 				<br><br>
 				<label for="apellido">Apellido:</label>
-				<input class="campoFormulario" type="text" required="" name="apellido">
+				<input class="campoFormulario" type="text" required="" name="name">
 				<br><br>
 				<label for="email">Email:</label>
-				<input class="campoFormulario" type="email" required="" name="email">
+				<input class="campoFormulario" type="email" required="" name="_replayto">
 				<br><br>
 				<label for="telefono">Teléfono:</label>
 				<input class="campoFormulario" type="text" required="" name="telefono">
 				<br><br>
 				<label>Motivo:</label>
-				<select>
+				<select name="message">
 				<option>Solicitar turno</option>
 				<option>Consulta por precio de servicio</option>
 				<option>Promociones</option>
 				<option>Otras consultas o comentarios</option>
 				</select>
 				<br><br>
-				<textarea name="areadetexto" id="" cols="30" rows="10" placeholder="Escribe aquí tu consulta o comentario..."></textarea>
+				<textarea name="message" id="" cols="30" rows="10" placeholder="Escribe aquí tu consulta o comentario..."></textarea>
 				<input class="botonEnviar" type="submit" value="Enviar">
 				<input class="botonBorrar" type="reset" value="Borrar">			
 			</fieldset>
