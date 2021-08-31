@@ -1,405 +1,446 @@
 @import "../general/variables";
 
-.cuerpoIndice{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: auto;
-}
 
-img {
-    height: 2em;
-    width: 2em;
-    max-width: 100%;
-    height: auto;
-}
+/*************************MAIN INICIO******************************/
 
-.principalIndice{
-/* border:  10px solid red;*/
-    background-color: $black;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.rostroMujer{
-    width: 75em;
-    height: 56.25em;
-    max-width: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-.slogan {
-    top: 6em;
-    position: absolute;
-    color: $pink;
-    z-index: 5;
-    right: 9em;
-    font-size: 1.9em;
-    border: none;
-    background: none;
-    z-index: 2;
-    font-family: 'Charmonman', cursive;
-    animation-name: deslizar;
-    animation-duration: 4s;
-}
-
-@keyframes deslizar {
-    from {
-    margin-right: 100%;
-    width: 355px;
+.mainIndex{
+    /* border:  10px solid red;*/
+        background-color: $black;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rostroMujer{
+        width: 75em;
+        height: 56.25em;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-top: 15px;
+    }
+    
+    .slogan {
+        top: 6em;
+        position: absolute;
+        color: $pink;
+        z-index: 5;
+        right: 2em;
+        font-size: 1.9em;
+        border: none;
+        background: none;
+        z-index: 2;
+        font-family: 'Charmonman', cursive;
+        animation-name: deslizar;
+        animation-duration: 4s;
+    }
+    
+    
+    @keyframes deslizar {
+        from {
+        margin-right: 100%;
+        width: 355px;
+        }
+    
+        to {
+        margin-left: 100%;
+        width: 355px;
+        }
+    }
+    
+    @media screen and (max-width:1024px){
+        .slogan {
+            top: 130px;
+            position: absolute;
+            color: $pink;
+            z-index: 5;
+            right: 10px;
+            font-size: 20px;
+            border: none;
+            background: none;
+            z-index: 2;
+            font-family: 'Charmonman', cursive;
+            animation-name: deslizar;
+            animation-duration: 0.0s;
+        }
+    
+    }
+    
+    @media screen and (max-width:480px){
+        .slogan {
+            top: 123px;
+            position: absolute;
+            color: $pink;
+            z-index: 5;
+            right: 5px;
+            font-size: 15px;
+            border: none;
+            background: none;
+            z-index: 2;
+            font-family: 'Charmonman', cursive;
+            animation-name: deslizar;
+            animation-duration: 0.0s;
+        }
+    
     }
 
-    to {
-    margin-left: 100%;
-    width: 355px;
-    }
-}
 
-/*---------Comienzo Servicios-----------*/
+/************************MAIN SERVICIOS********************************/
 
 .mainServicios{
-    position: relative;
-    width: 100%;
-    /*width: 1000px;*/
-    /*border: 10px solid red;*/
-    padding: 50px 0px 100px 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    /*align-items: center;*/
-    justify-content: center;
-    /*flex-direction: column;*/
+    background-color: $black;
+    width: auto;
+    height: auto;
 }
 
-.tituloServicios{
+.tituloSeccion{
     width: auto;
-    height: 50px;
-    padding: 50px 0px 20px 0px;
-    /*border: 5px solid black;*/
+    height: 60px;
     text-align: center;
     color: $pink;
-}
-
-.ladoIzqServicios{
-    /*width: 805px;*/
-    width: auto;
-    /*border: 10px solid green;*/
-    /*padding: 0px 5px 0px 10px;*/
-    /*border-right: 2px dotted hotpink;*/
-    /*float: left;*/
-}
-
-.ladoDerServicios{
-    width: 660px;
-    /*height: 1600px;*/
-    /*border: 10px solid blue;*/
-    /*float: right;*/
-}
-
-.ladoDerServicios img{
-    width: 509px;
-    height: 339px;
-    position: relative;
-    /*left: 2px;*/
-    left: 20px;
-    top: 60px;
-    margin-bottom: 30px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding: 20px 6px 6px 6px;
 }
 
 .mainServicios h2{
     font-size: 20px bold;
-    background-color: $black;
     position: relative;
-    /*margin-left: 150px;*/
     max-width: 600px;
     padding: 0px 0px 30px 0px;
     height: auto;
     color: $pink;
+
 }
 
 .mainServicios h3{
-    /*margin-left: 150px; */
     padding: 10px ;
     background-color: $lightpink;
     border: 0px solid $white ;
     border-top-right-radius: 20px;
     max-width: 600px ;
     font-family: 'Montserrat', sans-serif;
-    text-align: justify;
     position: relative;
     height: auto;
-    background-image: linear-gradient(to bottom, $hotpink, $pink, $lightpink, $pink, $hotpink) 
+    background-image: linear-gradient(to bottom, $hotpink, $pink, $lightpink, $pink, $hotpink); 
+    width: 100%;
+    box-shadow: 0px 0px 10px $hotpink;
 }
 
+
 .mainServicios p {
+    padding: 10px;  
     position: relative;
-    /*margin-left: 150px;*/
-    padding: 10px;
     background-color: $lightpink;
     border:  0px solid $white;
     border-bottom-left-radius: 20px;
     max-width: 600px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
-    background-image: linear-gradient($darkgrey, $grey, $lightgrey, $grey, $darkgrey)
+    background-image: linear-gradient($darkgrey, $grey, $lightgrey, $grey, $darkgrey);
+    width: 100%;
+    box-shadow: 0px 0px 10px $hotpink;
 }
-main {
-    background-color: $black;
+
+.ladoDerServicios img{
+    width: 27.44em;
+    height: 18.25em;
+    position: relative;
+    top: 75px;
+    margin-bottom: 90px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 10px $hotpink;
 }
 
-/*----------Fin Servicios---------------*/
-
-/*-----------Comienzo Galeria-------------------*/
-
-.galeria{
-    padding: 50px 0px 50px 0px;
+.container .ladoDerServicios{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: center;
+}
+.container .ladoIzqServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tituloGaleria{
-    padding-bottom: 20px;
-    color: $pink;
+@media screen and (max-width:992px){
+    .ladoDerServicios img{
+        width: 600px;
+        height: 360px;
+        top: 10px;
+        margin-bottom: 80px;
+    }
+    .mainServicios h2{
+        margin-top: 20px;
+    }
+}
+
+/*******************MAIN GALERIA*******************************/
+
+.mainGaleria{
+    background-color: $black;
+    width: auto;
+    height: auto;
 }
 
 .contenedorGaleria{
-    background-color: $hotpink;
-    border:  10px solid $hotpink;
-    max-width: 100%;
-    width: 1000px;
-    height: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    box-shadow: 0 0 30px $black;
-    border-radius: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    padding: 50px 100px 50px 100px;
+    grid-gap: 40px;
 }
-
-.item{
-    background-color: $black;
-    border: 5px solid $pink;
-    /*min-width: 100px;*/
-    min-height: 100px;
+.imagenGaleria{
     width: 100%;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    /*border: 2px solid hotpink;*/
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 30px $hotpink;
 }
 
-.tituloImagenGaleria{
-    color: $black;
+.ItemGaleria:nth-child(1) {
+    grid-row-start: span 3;
 }
 
-.item:hover{
-    transform: scale(1.5);
+.ItemGaleria:nth-child(2) {
+    grid-row-start: span 2;
+}
+
+.ItemGaleria:nth-child(3) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+.ItemGaleria:nth-child(5) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(6) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(7) {
+    grid-row-start: span 2;
+}
+
+.ItemGaleria:nth-child(8) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(9) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(10) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(11) {
+    grid-row-start: span 3;
+}
+
+.ItemGaleria:nth-child(12) {
+    grid-row-start: span 2;
+}
+
+.ItemGaleria{
+    position: relative;
+}
+
+.ItemGaleria:hover {
+    transform: scale(1.1);
     transition: all 0.75s;
 }
 
-#item1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-image: url(../imagenes/dermopenH.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item2{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background-image: url(../imagenes/pies2C.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item3{
-    grid-column-start: 4;
-    grid-column-end: 6;
-    background-image: url(../imagenes/piesH.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item4{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-image: url(../imagenes/rostroC.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item5{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    background-image: url(../imagenes/rostroHombreH.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item6{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    background-image: url(../imagenes/rostroCofiaC.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item7{
-    grid-column-start: 5;
-    grid-column-end: 6;
-    background-image: url(../imagenes/rostroConBbglowC.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item8{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-image: url(../imagenes/uñas3H.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item9{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background-image: url(../imagenes/uñas2C.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#item10{
-    grid-column-start: 4;
-    grid-column-end: 6;
-    background-image: url(../imagenes/uñasH.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/*--------Fin Galeria-----------*/
-
-/*-------------Comienzo Sobre Mi-----------------*/
-
-.tituloSobreMi{
-    width: auto;
-    height: 50px;
-    padding: 50px 0px 80px 0px;
-    /*border: 5px solid yellow;*/
-    text-align: center;
+.tituloImagen{
+    position: absolute;
+    bottom: 0px;
     color: $pink;
+    background-color: $black;
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px 0px 30px 0px;
+    /*border: 2px solid hotpink;*/
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+.ItemGaleria h4{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+@media only screen and (max-width:1024px){
+    .contenedorGaleria{
+        padding: 50px 50px 50px 50px;
+    }
+    .contenedorGaleria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .ItemGaleria:nth-child(2) {
+        grid-row-start: span 3;
+    }
+
+    .ItemGaleria:nth-child(3) {
+        grid-row-start: span 3 ;
+    }
+
+    .ItemGaleria:nth-child(11) {
+        grid-column-start: span 2 ;
+        grid-row-start: span 3;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .contenedorGaleria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ItemGaleria:nth-child(11) {
+        grid-column-start: span 1 ;
+        grid-row-start: span 4;
+    }
+}
+@media only screen and (max-width:600px){
+    .contenedorGaleria{
+        padding: 50px 40px 50px 40px;
+    }
+    .contenedorGaleria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*****************MAIN SOBRE MI***********************/
 
 .mainSobreMi{
+    background-color: $black;
     width: auto;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px 50px 50px 50px;
-    /*border:  5px solid black;*/
+    padding-bottom: 20px;
 }
 
-.contenedorImgVitoria{
-    /*border: 5px solid red;*/
-    width: 400px;
-    min-width: 200px;
-    height: auto;
-    min-height: 200px;
-}
-
-.fotoVitoria{
-    width: 400px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.contenedorTextoVitoria{
-    width: auto;
-    height: auto;
-    text-align: justify-all;
-    /*border:  5px solid green;*/
-    color: $pink;
-}
-/*-------Fin Sobre Mi-------*/
-
-/*-------Comienzo Contacto---------*/
-
-.cuerpoContacto{
+.containerSobreMi{
     width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 60px;
+    border: 2px solid $hotpink;
+    box-shadow: 0px 0px 10px $hotpink;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.containerSobreMi img{
+    width: 330px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.containerSobreMi p{
+    font-family: 'Montserrat' sans-serif;
+    color: $pink;
+    text-align: justify;
+}
+
+/*******************MAIN CONTACTO**************************/
+
+
+.mainContacto {
+    width: auto;
     height: auto;
     background-color: $black;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.principalContacto{
-    /*border: 10px solid purple;*/
-    /*margin-top: 20px;*/
-    padding: 50px 20px 50px 20px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.principalContacto h1{
+.mainContacto h1 {
     padding-bottom: 20px;
     color: $pink;
 }
 
-.principalContacto p{
-    padding-bottom: 20px;
-    color: $pink
+.mainContacto p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: $pink;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
 }
 
-.formularioDeContacto{
+.formularioDeContacto {
     color: $pink;
     padding: 20px;
     width: 330px;
     border-radius: 10px;
+    border: 2px solid $hotpink;
+    box-shadow: 10px 10px 10px $hotpink;
 }
 
-input{
+.formularioDeContacto legend{
+    text-align: center;
+}
+
+.formularioDeContacto label{
+    font-family:'Montserrat', sans-serif;
+}
+
+.formularioDeContacto option{
+    font-family:'Montserrat', sans-serif;
+}
+
+.formularioDeContacto select{
+    font-family:'Montserrat', sans-serif;
+}
+
+input {
     transition: all 1s;
     width: 100%;
     border: 3px solid $pink;
+    font-family:'Montserrat', sans-serif;
 }
 
-.campoFormulario:focus{
+.campoFormulario:focus {
     border: 3px solid $pink;
     color: $black;
     transform: scale(1.1);
 }
 
-select{
+select {
     border: 3px solid $pink;
     width: 100%;
 }
 
-textarea{
+textarea {
     width: 100%;
     border: 3px solid $pink;
     color: $black;
+    font-family:'Montserrat', sans-serif;
 }
 
-.botonEnviar{
+.botonEnviar {
     background: $pink;
-    width: 20%;
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.botonBorrar{
+.botonBorrar {
     background: $pink;
     color: $black;
     width: 30%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*--------Fin Contacto-------*/
+.datosContacto pre{
+    padding-top: 40px;
+    text-align: center;
+}
+

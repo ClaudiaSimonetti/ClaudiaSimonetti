@@ -1,230 +1,183 @@
 @import "variables";
 
-.menu{
-    ul{
-    list-style: none;
-    }
-}
-
-.enlacesMenu > li{
-    float: left;
-}
-
-.menu{
-    li{
-        a{
-            background: $lightpink;
-            color: $black;
-            padding:  1em 3em;
-            display: block;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.25em;
-            text-align: left;
-            text-decoration: none;
-            top: 4em;
-            left: 14em;
-            position: relative;
-            z-index: 3;
-            box-shadow: 0px 0px 20px $hotpink;
-        }
-    }
-}
-
-.menu {
-    li{
-        a:hover {
-            background:$hotpink;
-            color: $pink;
-        }
-    }
-}
-
-.menu{
-    .enlacesSubmenu {
-    display: none;
-    position: absolute;
-    width: 13em;
-    }
-}
-
-.menu{
-    .linkServicios:hover {
-        .enlacesSubmenu {
-            display: block;
-        }
-    }
-}
-
-.menu{ 
-    .enlacesSubmenu{
-        li {
-            position: relative;
-        }
-    }    
-}
-
-.menu {
-    .subcategoria{
-    display: block;
-    width: 34em;
-    position: absolute ;
-    left: 13em;
-    top:  0px;
-    visibility: hidden;
-    }
-}
-
-.menu{
-    .enlacesSubmenu{
-        li:hover {
-            .subcategoria{
-                top: 0%;
-                visibility: visible;
-            }
-        }
-    }
-}
-
-.menuResponsivo{
-    display: none;
-}
-
-@media only screen and (max-width: 320px), only screen and (max-width: 480px), only screen and (max-width: 600px) {
-
-.menu {
-    .enlacesMenu{
-    display: none;
-    }
+.logo{
+    width: 100px;
+    z-index: 7;
+    border-radius: 90px;
+    box-shadow: 0px 0px 10px $hotpink;
 }
 
 .encabezado{
-    .menuResponsivo{
-    display: block;
-    }
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    z-index: 6;
+    box-shadow: 0px 0px 10px $hotpink;
 }
 
-li{
+ul{
     list-style: none;
 }
 
 a{
     text-decoration: none;
-    color: $black;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+}
+
+.item{
+    padding: 20px 30px;
+    color: $pink;
     font-family: 'Montserrat', sans-serif;
 }
 
-.menuResponsivo{
-    background-color: $black;
+.item:hover{
+    background: $hotpink;
+    border-bottom: solid $hotpink 1px;
     box-shadow: 0px 0px 20px $hotpink;
-}
-
-span{
-    box-shadow: 0px 0px 20px $hotpink;
-}
-
-.contenedorBoton{
-    padding:  1rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border-bottom: 1px solid $white;
-}
-
-span{
-    padding:  5px;
-    background-color: $black;
+    border-radius: 30px;
+    text-decoration: none;
     color: $pink;
-    font-size: 1.2em;
-    font-variant: small-caps;
-    cursor: pointer;
-    display: block;
-    position: fixed;
-    margin-left: 270px;
-    margin-top: 10px;
-    border-radius: 10px;
+    visibility: visible;
+    transition: all 0.5s;
 }
 
-span::after{
-    float: right;
-    right:  10%;
+.slide a{
+    text-decoration: none;
 }
 
-.contenedorMenuResponsivo{
-    background: $pink;
-    width: 100%;
-    max-width: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    transition: height .4s ease;
-    z-index: 2;
-    height: 0px;
-    overflow: hidden;
-    clear: both;
+.listItem{
+    position: relative;
 }
 
-.contenedorMenuResponsivo li{padding: 10px;}
-
-#touch{position: absolute; opacity:  0; height:  0px}
-
-#touch:checked + .contenedorMenuResponsivo{height: 200px;}
-
-.logoPrincipal{
-    width: 100px;
-    height: 100px;
+.slide{
     position: absolute;
-    left: 30px;
-    top: 10px;
-    z-index: 1;
-}
-
-.slogan{
     display: none;
+    top: 40px;
+    background: $black;
+    width: 200px;
+    z-index: 5;
+    border-radius: 30px;
+    transition: all 2s easy-out;
 }
 
-.iconoInstagram{
+.listItem:hover > .slide{
+    display: block;
+
+}
+
+.listItem .slide li:hover > ul{
+    display: block;
+}
+
+.slide li{
+    position: relative;
+}
+
+.slide ul{
+    position: absolute;
     left: 200px;
-    top: 90px;
-    height: 20px;
-    width: 20px;
+    top: 0;
 }
 
-.textoSeguimeEn{
-    left: 140px;
-    top: 100px;
-    font-size: 0.6em;
+.slide li a{
+    color:pink;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.iconoWhatsapp{
-    left: 320px;
-    top: 90px;
-    height: 20px;
-    width: 20px;
+.slide li a:hover{
+    background: $hotpink;
+    box-shadow: 0px 0px 20px $hotpink;
+    border-radius: 30px;
+    transition: all 0.5s;
 }
 
-.movil{
-    left: 230px;
-    top: 100px;
-    font-size: 0.6em;
+#boton{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: pink;
+    cursor: pointer;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $hotpink;
+    padding: 5px 10px 5px 10px;
 }
 
-.iconoLocacion{
-    height: 20px;
-    width: 20px;
+@media screen and (max-width:850px) {
+    #boton{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        /**height: calc(100vh - 60px);**/
+        height: auto;
+        background:black;
+        position: absolute;
+        top: 125px;
+        left: -200%;
+        transition: all 1s;
+        /**overflow: scroll;**/
+        z-index: 4;
+    }
+
+    .lista{
+        flex-direction: column;
+    }
+
+    .slide{
+        position: relative;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    .slide ul{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    /**a{
+        display: block;
+        padding: 20px 35px;
+    }**/
+
+    .inResponsiveMain{
+        display: block;
+        padding: 20px 35px;
+    }
+
+    .listItem > .slide li a{
+        margin-left: 20px;
+    }
+
+    .listItem .slide li > ul li a{
+        margin-left: 40px;
+    }
+
+    .listItem:hover > .slide{
+        /*display: none;*/
+        visibility: visible;
+    }
+    .listItem .slide li:hover > ul{
+    display: none;
+    }
 }
 
-.pie{
-    font-size: 0.8em;
+@media screen and (max-width:380px) {
+    .menu{
+        width: 100%;
+    }
 }
-
-.navbar {
-    left: 150px;
-}
-
-.formatoNav{
-    background: $pink;
-}
-}
-
-

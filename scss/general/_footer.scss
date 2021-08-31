@@ -1,36 +1,5 @@
 @import "variables";
 
-.pie {
-    background-color: $black;
-    font-family: 'Montserrat', sans-serif;
-    color: $pink;
-    z-index: 5;
-    text-align: center;
-    padding: 1em 0px 2em 0px;
-    /*border:  10px solid green;*/
-    a{
-        color: $pink;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .copyright{
-        margin-top: 1.25em;
-        font-family: 'Montserrat', sans-serif;
-    } 
-}
-
-.direccion{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1.25em;
-}
-
-.iconoLocacion{
-    position: relative;
-    margin-left: 16em;
-    top: 1em;
-}
-
-/*------Comienzo Contacto-------*/
-
 .pieDeContacto{
     width: 100%;
     height: auto;
@@ -38,9 +7,41 @@
     flex-wrap: nowrap;
 }
 
-.pie{
+.pie {
     height: auto;
     width: 100%;
+    background-color: $black;
+    font-family: 'Montserrat', sans-serif;
+    color: $pink;
+    z-index: 3;
+    text-align: center;
+    padding: 1em 0px 2em 0px;
+    /*border:  10px solid green;*/
 }
 
-/*------Fin Contacto-------*/
+.direccion{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.25em;
+    color: $pink;
+}
+
+.iconoLocacion{
+    position: relative;
+    margin-left: 22em;
+    top: 1.2em;
+}
+
+.pie a{
+    color: $pink;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.pie .copyright{
+    margin-top: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+i{
+    size: 15px;
+    color: $pink;
+}
