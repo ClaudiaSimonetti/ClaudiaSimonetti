@@ -108,17 +108,19 @@ body{
     padding: 20px 6px 6px 6px;
 }
 
-.mainServicios h2{
+.mainServicios {
+    h2{
     font-size: 20px bold;
     position: relative;
     max-width: 600px;
     padding: 0px 0px 30px 0px;
     height: auto;
     color: $pink;
-
+    }
 }
 
-.mainServicios h3{
+.mainServicios {
+    h3{
     padding: 10px ;
     background-color: $lightpink;
     border: 0px solid $white ;
@@ -130,10 +132,12 @@ body{
     background-image: linear-gradient(to bottom, $hotpink, $pink, $lightpink, $pink, $hotpink); 
     width: 100%;
     box-shadow: 0px 0px 10px $hotpink;
+    }
 }
 
 
-.mainServicios p {
+.mainServicios {
+    p {
     padding: 10px;  
     position: relative;
     background-color: $lightpink;
@@ -145,9 +149,11 @@ body{
     background-image: linear-gradient($darkgrey, $grey, $lightgrey, $grey, $darkgrey);
     width: 100%;
     box-shadow: 0px 0px 10px $hotpink;
+    }
 }
 
-.ladoDerServicios img{
+.ladoDerServicios {
+    img{
     width: 27.44em;
     height: 18.25em;
     position: relative;
@@ -156,6 +162,7 @@ body{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0px 0px 10px $hotpink;
+    }
 }
 
 .container .ladoDerServicios{
@@ -276,8 +283,10 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.ItemGaleria h4{
-    font-family: 'Montserrat', sans-serif; 
+.ItemGaleria {
+    h4{
+    font-family: 'Montserrat', sans-serif;
+    } 
 }
 
 @media only screen and (max-width:1024px){
@@ -340,23 +349,28 @@ body{
     border-radius: 0px 20px 0px 20px;
 }
 
-.containerSobreMi img{
+.containerSobreMi {
+    img{
     width: 250px;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    }
 }
 
-.containerSobreMi p{
+.containerSobreMi {
+    p{
     font-family: 'Montserrat', sans-serif;
     color: $pink;
     text-align: justify;
+    }
 }
 
 @media only screen and (max-width:480px){
     .containerSobreMi img{
         width: 250px;
+}
 }
 
 /*******************MAIN CONTACTO**************************/
@@ -372,17 +386,21 @@ body{
     align-items: center;
 }
 
-.mainContacto h1 {
+.mainContacto {
+    h1 {
     padding-bottom: 20px;
     color: $pink;
+    }
 }
 
-.mainContacto p {
+.mainContacto {
+    p {
     padding-bottom: 10px;
     padding-top: 10px;
     color: $pink;
     font-family:'Montserrat', sans-serif;
     text-align: center;
+    }
 }
 
 .formularioDeContacto {
@@ -394,20 +412,28 @@ body{
     box-shadow: 10px 10px 10px $hotpink;
 }
 
-.formularioDeContacto legend{
+.formularioDeContacto {
+    legend{
     text-align: center;
+    }
 }
 
-.formularioDeContacto label{
+.formularioDeContacto {
+    label{
     font-family:'Montserrat', sans-serif;
+    }
 }
 
-.formularioDeContacto option{
+.formularioDeContacto {
+    option{
     font-family:'Montserrat', sans-serif;
+    }
 }
 
-.formularioDeContacto select{
+.formularioDeContacto {
+    select{
     font-family:'Montserrat', sans-serif;
+    }
 }
 
 input {
@@ -448,8 +474,10 @@ textarea {
     font-family: 'Montserrat', sans-serif;
 }
 
-.datosContacto pre{
+.datosContacto {
+    pre{
     padding-top: 40px;
     text-align: center;
+    }
 }
 

@@ -89,18 +89,26 @@ a{
     top: 0;
 }
 
-.slide li a{
+.slide {
+    li {
+        a{
     color:pink;
     padding: 10px 20px;
     display: block;
     font-family: 'Montserrat', sans-serif;
+        }
+    }
 }
 
-.slide li a:hover{
+.slide {
+    li {
+        a:hover{
     background: $hotpink;
     box-shadow: 0px 0px 20px $hotpink;
     border-radius: 30px;
     transition: all 0.5s;
+        }
+    }
 }
 
 #boton{
@@ -143,10 +151,12 @@ a{
         width: 100%;
     }
 
-    .slide ul{
+    .slide {
+        ul{
         position: relative;
         top: 0;
         left: 0;
+        }
     }
 
     /**a{
@@ -159,12 +169,20 @@ a{
         padding: 20px 35px;
     }
 
-    .listItem > .slide li a{
+    .listItem > .slide {
+        li {
+            a{
         margin-left: 20px;
+            }
+        }
     }
 
-    .listItem .slide li > ul li a{
+    .listItem .slide li > ul {
+        li {
+            a{
         margin-left: 40px;
+            }
+        }
     }
 
     .listItem:hover > .slide{
