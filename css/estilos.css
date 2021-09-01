@@ -525,7 +525,7 @@ a {
 }
 
 .containerSobreMi p {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffc0cb;
   text-align: justify;
 }
