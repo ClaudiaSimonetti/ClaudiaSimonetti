@@ -422,6 +422,12 @@ body {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 320px) {
+  .ladoDerServicios img {
+    width: 27.44em;
+    height: 12.5em;
+  }
+}
 /*******************MAIN GALERIA*******************************/
 .mainGaleria {
   background-color: #000000;
@@ -563,6 +569,19 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media only screen and (max-width: 320px) {
+  .contenedorGaleria {
+    padding: 90px 20px 50px 20px;
+  }
+
+  .ItemGaleria:nth-child(3) {
+    grid-row-start: span 2;
+  }
+
+  .ItemGaleria:nth-child(8) {
+    grid-row-start: span 2;
+  }
+}
 /*****************MAIN SOBRE MI***********************/
 .mainSobreMi {
   background-color: #000000;
@@ -599,6 +618,15 @@ body {
 @media only screen and (max-width: 480px) {
   .containerSobreMi img {
     width: 250px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .containerSobreMi img {
+    width: 170px;
+  }
+
+  .mainSobreMi {
+    padding-bottom: 40px;
   }
 }
 /*******************MAIN CONTACTO**************************/
