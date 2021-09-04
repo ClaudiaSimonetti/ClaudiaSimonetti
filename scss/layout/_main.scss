@@ -91,7 +91,7 @@ body{
     
     }
 
-    @media screen and (max-width:320px){
+    @media screen and (max-width:360px){
         .slogan{
             width: 120px;
             text-align: right;
@@ -197,7 +197,7 @@ body{
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .ladoDerServicios img{
         width: 27.44em;
         height: 12.50em;
@@ -407,6 +407,12 @@ body{
     }
     .mainSobreMi{
         padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .containerSobreMi img{
+        width: 210px;
     }
 }
 
