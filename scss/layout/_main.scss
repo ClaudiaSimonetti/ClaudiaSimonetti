@@ -91,6 +91,15 @@ body{
     
     }
 
+    @media screen and (max-width:320px){
+        .slogan{
+            width: 120px;
+            text-align: right;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+    }
+
 
 /************************MAIN SERVICIOS********************************/
 

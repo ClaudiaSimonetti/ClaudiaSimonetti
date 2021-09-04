@@ -197,5 +197,51 @@ a{
 @media screen and (max-width:380px) {
     .menu{
         width: 100%;
+        height: auto;
     }
+}
+
+@media screen and (max-width:320px) {
+    .encabezado{
+        width: auto;
+    }
+    .logo__div{
+        padding-left: 1px;
+        left: 1px;
+    }
+    .lista{
+        padding: 5px;
+    }
+    .item{
+        width: 20px;
+        padding-right: 20px;
+    }
+    .boton__div{
+        padding-left: 30px;
+    }
+    .item:hover{
+        width: 100%;
+        padding: 20px;
+    }
+    .slide li a:hover{
+        width: 90%;
+    }
+    .logo{
+        width: 90px;
+    }
+    .listItem:hover > .slide{
+        display: none;
+    }
+    .listItem .slide li:hover > ul{
+    display: none;
+    }
+    .inResponsiveMain{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .inResponsiveMain a{
+        border-radius: 30px;
+        
+    }
+
 }
