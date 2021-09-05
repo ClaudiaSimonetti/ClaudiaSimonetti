@@ -201,9 +201,9 @@ a{
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:360px) {
     .encabezado{
-        width: 100%;
+        width: auto;
     }
     .logo__div{
         padding-left: 1px;
@@ -244,4 +244,14 @@ a{
         
     }
 
+}
+
+@media screen and (max-width:480px) {
+    .encabezado{
+        width: 100%;
+    /** border: 5px solid red;**/
+    }
+    .item{
+        padding: 20px 5px;
+    }
 }
