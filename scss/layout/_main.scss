@@ -343,17 +343,20 @@ body{
     .contenedorGaleria{
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-@media only screen and (max-width:320px){
-    .contenedorGaleria{
-        padding: 90px 20px 50px 20px;
-    }
     .ItemGaleria:nth-child(3){
         grid-row-start: span 2;    
     }
+    .ItemGaleria:nth-child(4){
+        grid-row-start: span 3;    
+    }
     .ItemGaleria:nth-child(8){
         grid-row-start: span 2;    
+    }
+}
+
+@media only screen and (max-width:380px){
+    .contenedorGaleria{
+        padding: 90px 20px 50px 20px;
     }
 }
 
@@ -395,25 +398,36 @@ body{
     }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
     .containerSobreMi img{
-        width: 250px;
+        width: 240px;
     }
 }
 
-@media only screen and (max-width: 320px){
+
+@media only screen and (max-width: 480px){
     .containerSobreMi img{
-        width: 170px;
-    }
-    .mainSobreMi{
-        padding-bottom: 40px;
+        width: 200px;
     }
 }
 
 @media only screen and (max-width: 360px){
     .containerSobreMi img{
-        width: 210px;
+        width: 230px;
     }
+    .containerSobreMi{
+        padding: 50px;
+    } 
+    
+}
+
+@media only screen and (max-width: 320px){
+    .containerSobreMi img{
+        width: 190px;
+    }
+    .containerSobreMi{
+        padding: 50px;
+    } 
 }
 
 /*******************MAIN CONTACTO**************************/
