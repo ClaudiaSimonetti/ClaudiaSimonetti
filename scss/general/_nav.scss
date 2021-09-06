@@ -31,11 +31,11 @@ a{
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 20px;
+    padding: 5px;
 }
 
 .item{
-    padding: 20px 30px;
+    padding: 20px;
     color: $pink;
     font-family: 'Montserrat', sans-serif;
 }
@@ -201,10 +201,9 @@ a{
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:480px) {
     .encabezado{
         width: auto;
-        box-shadow: 0px 0px 10px $black;
     }
     .logo__div{
         padding-left: 1px;
@@ -247,13 +246,4 @@ a{
 
 }
 
-@media screen and (max-width:480px) {
-    .encabezado{
-        width: 100%;
-    /** border: 5px solid red;**/
-        box-shadow: 0px 0px 10px $black;
-    }
-    .item{
-        padding: 20px 5px;
-    }
-}
+
