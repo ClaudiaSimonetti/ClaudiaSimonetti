@@ -8,97 +8,93 @@ body{
 /*************************MAIN INICIO******************************/
 
 .mainIndex{
-    /* border:  10px solid red;*/
-        background-color: $black;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    background-color: $black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rostroMujer{
+    width: 75em;
+    height: 56.25em;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+.slogan {
+    top: 6em;
+    position: absolute;
+    color: $pink;
+    z-index: 5;
+    right: 2em;
+    font-size: 1.9em;
+    border: none;
+    background: none;
+    z-index: 2;
+    font-family: 'Charmonman', cursive;
+    animation-name: deslizar;
+    animation-duration: 4s;
+}
+
+@keyframes deslizar {
+    from {
+        margin-right: 100%;
+        width: 355px;
     }
     
-    .rostroMujer{
-        width: 75em;
-        height: 56.25em;
-        max-width: 100%;
-        height: auto;
-        z-index: 1;
-        margin-top: 15px;
+    to {
+        margin-left: 100%;
+        width: 355px;
     }
-    
+}
+
+@media screen and (max-width:1024px){
     .slogan {
-        top: 6em;
+        top: 130px;
         position: absolute;
         color: $pink;
         z-index: 5;
-        right: 2em;
-        font-size: 1.9em;
+        right: 10px;
+        font-size: 20px;
         border: none;
         background: none;
         z-index: 2;
         font-family: 'Charmonman', cursive;
         animation-name: deslizar;
-        animation-duration: 4s;
+        animation-duration: 0.0s;
     }
-    
-    
-    @keyframes deslizar {
-        from {
-        margin-right: 100%;
-        width: 355px;
-        }
-    
-        to {
-        margin-left: 100%;
-        width: 355px;
-        }
-    }
-    
-    @media screen and (max-width:1024px){
-        .slogan {
-            top: 130px;
-            position: absolute;
-            color: $pink;
-            z-index: 5;
-            right: 10px;
-            font-size: 20px;
-            border: none;
-            background: none;
-            z-index: 2;
-            font-family: 'Charmonman', cursive;
-            animation-name: deslizar;
-            animation-duration: 0.0s;
-        }
-    
-    }
-    
-    @media screen and (max-width:480px){
-        .slogan {
-            top: 123px;
-            position: absolute;
-            color: $pink;
-            z-index: 5;
-            right: 5px;
-            font-size: 15px;
-            border: none;
-            background: none;
-            z-index: 2;
-            font-family: 'Charmonman', cursive;
-            animation-name: deslizar;
-            animation-duration: 0.0s;
-        }
-    
-    }
+}
 
-    @media screen and (max-width:360px){
-        .slogan{
-            width: 120px;
-            text-align: right;
-            margin-right: 10px;
-            font-size: 15px;
-        }
+@media screen and (max-width:480px){
+    .slogan {
+        top: 123px;
+        position: absolute;
+        color: $pink;
+        z-index: 5;
+        right: 5px;
+        font-size: 15px;
+        border: none;
+        background: none;
+        z-index: 2;
+        font-family: 'Charmonman', cursive;
+        animation-name: deslizar;
+        animation-duration: 0.0s;
     }
+}
+
+@media screen and (max-width:360px){
+    .slogan{
+        width: 120px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+}
 
 
 /************************MAIN SERVICIOS********************************/
@@ -312,16 +308,13 @@ body{
     .contenedorGaleria{
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .ItemGaleria:nth-child(2) {
+    .ItemGaleria:nth-child(2){
         grid-row-start: span 3;
     }
-
-    .ItemGaleria:nth-child(3) {
+    .ItemGaleria:nth-child(3){
         grid-row-start: span 3 ;
     }
-
-    .ItemGaleria:nth-child(11) {
+    .ItemGaleria:nth-child(11){
         grid-column-start: span 2 ;
         grid-row-start: span 3;
     }
@@ -398,17 +391,37 @@ body{
     }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (min-width:517px) and (max-width: 768px){
     .containerSobreMi img{
         width: 240px;
     }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 516px){
+    .containerSobreMi img{
+        width: 290px;
+    }
+    .containerSobreMi{
+        padding: 80px;
+    } 
+}
 
 @media only screen and (max-width: 480px){
     .containerSobreMi img{
         width: 200px;
     }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 440px){
+    .containerSobreMi{
+        padding: 80px;
+    } 
+}
+
+@media only screen and (min-width: 440px) and (max-width: 476px){
+    .containerSobreMi{
+        padding: 30px;
+    } 
 }
 
 @media only screen and (max-width: 360px){
@@ -418,7 +431,6 @@ body{
     .containerSobreMi{
         padding: 50px;
     } 
-    
 }
 
 @media only screen and (max-width: 320px){

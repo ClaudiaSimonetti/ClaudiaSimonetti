@@ -251,7 +251,6 @@ body {
 
 /*************************MAIN INICIO******************************/
 .mainIndex {
-  /* border:  10px solid red;*/
   background-color: #000000;
   width: 100%;
   height: auto;
@@ -619,14 +618,33 @@ body {
   text-align: justify;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 517px) and (max-width: 768px) {
   .containerSobreMi img {
     width: 240px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 516px) {
+  .containerSobreMi img {
+    width: 290px;
+  }
+
+  .containerSobreMi {
+    padding: 80px;
   }
 }
 @media only screen and (max-width: 480px) {
   .containerSobreMi img {
     width: 200px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 440px) {
+  .containerSobreMi {
+    padding: 80px;
+  }
+}
+@media only screen and (min-width: 440px) and (max-width: 476px) {
+  .containerSobreMi {
+    padding: 30px;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -756,7 +774,6 @@ textarea {
   z-index: 3;
   text-align: center;
   padding: 1em 0px 2em 0px;
-  /*border:  10px solid green;*/
 }
 
 .direccion {
